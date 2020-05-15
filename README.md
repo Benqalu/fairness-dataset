@@ -7,6 +7,7 @@
  - broward
  - compas
  - hospital
+ 数据需要解压缩出.npz文件
 
 ## Sensitive Attribute
 每个数据集的都有两个sensitive attribute：race 和 gender，均为binary。
