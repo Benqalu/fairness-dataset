@@ -31,5 +31,10 @@
  8. l_pred_defense：MIA在(5)上的预测结果（有defense）
  9. 以上数据(1)-(7)需要以原始的x为基准一一对应
 
+## Dataset Setting
+ - 不使用Shadow Model
+ - 首先将数据集均分为两份，前50%为train_target,后50%为test_target，作为target model的train和test
+ - 使用train_target的前50%，与test_target作为MIA的training dataset，然后使用
+
 ## 其他
 如果defense 算法本身有调节参数（例如，defense budget），请条件参数从no defense 到最强defense的至少6个参数结果。如果是这种情况，因为某个参数已经包含了no defense 参数的结果，故需求中的(4)和(7)可以省略，用对应无defense 参数结果的(5)和(8)替代。
